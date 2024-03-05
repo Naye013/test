@@ -13,6 +13,7 @@ chart = (alt.Chart(cars).mark_circle().encode(
 .add_params(brush))
 
 app = dash.Dash(__name__)
+server = app.server
 app.layout = html.Div([
         html.Iframe(
             srcDoc=chart.to_html(),
