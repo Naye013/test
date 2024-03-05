@@ -2,6 +2,7 @@ import dash
 from dash import html
 
 myapp = dash.Dash()
+server = myapp.server
 
 myapp.layout = html.Div(
     html.H1(children="Hello World")
